@@ -1,1 +1,6 @@
-## [Video Demo](https://github.com/Sidd444/Python-Projects/tree/main/Calculator%20using%20Tkinter/calculator_tkinter_demo.webm)
+
+<video controls width="600">
+  <source src="https://github.com/Sidd444/Python-Projects/tree/main/Calculator%20using%20Tkinter/calculator_tkinter_demo.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
