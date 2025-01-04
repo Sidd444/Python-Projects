@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('https://cdna.artstation.com/p/assets/images/images/028/701/942/large/the-pxl-art-django-unchained.jpg?1595260940');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="bg-white bg-opacity-30 backdrop-blur-md shadow-lg rounded px-6 py-8 w-11/12 max-w-lg text-center">
+        <h1 class="text-2xl font-bold mb-4 ">{{ title }}</h1>
+        <h2 class="text-xl font-bold mb-6">Submitted Data Will Be Shown Here</h2>
+        <div class="space-y-4 text-green-5-800 text-2xl">
+            <p class="text-2xl font-bold">First Name: {{ fn }}</p>
+            <p class="text-2xl font-bold">Last Name: {{ ln }}</p>
+            <p class="text-2xl font-bold">Email: {{ em }}</p>
+            <p class="text-2xl font-bold">Content: {{ ms }}</p>
+        </div>
+    </div>
+</body>
+</html>
