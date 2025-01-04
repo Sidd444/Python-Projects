@@ -1,3 +1,3 @@
 ## Video Demo
 
-<iframe src="https://drive.google.com/uc?id=1j0qWc1StAbmMxuoDfbKSVjj6_j3kUDh9" width="640" height="360" allow="autoplay"></iframe>
+[![Watch the demo](https://via.placeholder.com/640x360.png?text=Click+to+Watch+Demo)](https://drive.google.com/file/d/1j0qWc1StAbmMxuoDfbKSVjj6_j3kUDh9/view?usp=sharing)
