@@ -1,3 +1,4 @@
 ## Video Demo
 
-[Click here to view the demo video](https://raw.githubusercontent.com/Sidd444/Python-Projects/main/Calculator%20using%20Tkinter/calculator_tkinter_demo.webm)
+[![Watch the demo](https://via.placeholder.com/640x360.png?text=Click+to+Watch+Demo)](https://drive.google.com/file/d/1j0qWc1StAbmMxuoDfbKSVjj6_j3kUDh9/view?usp=sharing)
+
