@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col items-center">
+    <h1 class="text-4xl font-bold text-center text-white mt-8">{{ post.title }}</h1>
+    <p class="text-gray-400 text-center text-sm mt-2">{{ post.public_date }}</p>
+    <div class="mt-6">
+        <center>
+            <img src="{{ post.image.url }}" height="300" width="400" class="rounded-md shadow-lg border border-gray-700"/>
+        </center>
+    </div>
+    <p class="mt-8 px-6 text-gray-300 leading-relaxed text-center max-w-3xl">{{ post.body }}</p>
+</body>
+</html>

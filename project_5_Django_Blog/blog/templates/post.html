@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col items-center">
+    <header class="w-full py-6 bg-gray-800 shadow-md">
+        <h1 class="text-4xl font-bold text-center text-white">Django Blog</h1>
+        <h2 class="text-xl font-semibold text-center text-gray-300 mt-2">Latest Posts</h2>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <hr class="border-gray-700 mb-6">
+        <div class="space-y-8">
+            {% for post in post.all %}
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <a href="{% url 'detail' post.id %}" class="block text-2xl font-bold text-blue-400 hover:underline">
+                    {{ post.title }}
+                </a>
+                <p class="text-gray-400 text-sm mt-1">{{ post.public_date }}</p>
+                <div class="mt-4">
+                    <img src="{{ post.image.url }}" alt="{{ post.title }}" class="w-48 h-48 object-cover rounded-md">
+                </div>
+                <p class="mt-4 text-gray-300">{{ post.summary }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>
