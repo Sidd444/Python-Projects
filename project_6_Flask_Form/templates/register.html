@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://www.fullstackpython.com/img/pages/flask-python-fsp.jpg');">
+    <div class="glass p-8 w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-6">Register</h1>
+        <form action="/confirmation" method="post" class="space-y-4">
+            <div>
+                <label for="name" class="block text-lg font-medium">Name</label>
+                <input type="text" name="name" id="name" class="w-full px-4 py-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="city" class="block text-lg font-medium">City</label>
+                <input type="text" name="city" id="city" class="w-full px-4 py-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="phone_number" class="block text-lg font-medium">Phone Number</label>
+                <input type="text" name="phone_number" id="phone_number" class="w-full px-4 py-2 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <button type="submit" class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>

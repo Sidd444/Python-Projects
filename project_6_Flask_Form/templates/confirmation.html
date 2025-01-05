@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://www.fullstackpython.com/img/pages/flask-python-fsp.jpg');">
+    <div class="glass p-8 w-full max-w-lg">
+        <h1 class="text-2xl font-bold mb-6">Registration Successful</h1>
+        <table class="table-auto w-full text-left text-lg">
+            <tbody>
+                <tr>
+                    <td class="font-medium">Name:</td>
+                    <td>{{ name }}</td>
+                </tr>
+                <tr>
+                    <td class="font-medium">City:</td>
+                    <td>{{ city }}</td>
+                </tr>
+                <tr>
+                    <td class="font-medium">Phone Number:</td>
+                    <td>{{ phoneNo }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
